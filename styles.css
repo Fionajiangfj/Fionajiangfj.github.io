@@ -6,15 +6,10 @@ body {
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: dodgerblue;
     height: 90px;
 }
 
 nav > #nav-div-left {
-    display: flex;
     margin-left: 25px;
     font-size: 20px;
 }
@@ -26,7 +21,6 @@ nav a {
 }
 
 nav > #nav-div-social-icons {
-    display: flex;
     margin-right: 25px;
     font-size: 24px;
 }
@@ -43,22 +37,10 @@ main {
 
 table {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    border-collapse: collapse;
 }
 
-tr {
-    border-bottom:1px solid #5555;
-}
-th, td {
-    padding: 20px;
-}
 table a {
     color: #319795;
-    text-decoration: none;
 }
-table a:hover {
-    text-decoration: double;
-}
-tbody tr:hover {
-    background-color:#cccccc;
-}
+
+

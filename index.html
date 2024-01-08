@@ -5,17 +5,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/b17ed72472.js" crossorigin="anonymous"></script>
 
         <title>Homepage</title>
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="navbar bg-primary sticky-top">
                 <div id="nav-div-left">
                     <a href="index.html">Personal Projects</a>
-                    <a href="#">Group Projects</a>
-                    <a href="#">Practice Works</a>
                     <a href="Yan-Jiang.pdf">Resume</a>
                 </div>
 
@@ -35,25 +34,32 @@
 
         <main>
             <h1>Yan's Projects</h1>
-            <table>
-                <thead>
+            <table class="table table-hover table-responsive">
+                <thead class="table-light">
                     <tr>
-                        <th>Project Name</th>
-                        <th>Description</th>
+                        <th class="col-2">Project Name</th>
+                        <th class="col-8">Description</th>
+                        <th class="col-2">Language & Database</th>
                     </tr>
                 </thead>
+
+
                 <tbody>
+
                     <tr>
-                        <td>
+                        <td class="col-2">
                             <a href="https://github.com/Fionajiangfj/customer_restaurant_driver">
                                 Restaurant Order Management System
                             </a>
-                        </td>
+                        </td class="col-8">
                         <td>
-                            A comprehensive web application for a restaurant, facilitating efficient order
-                            processing and delivery management. 
-                            The project involved creating three interconnected websites for customers,
-                            restaurant owners, and delivery drivers, each tailored to their specific needs. 
+                            A comprehensive web server application enabling restaurant order management. System features a customer-facing website for order placement and tracking, an admin site for order processing, and a driver interface for delivery management.
+                        </td>
+                        <td class="col-2">
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>MongoDB Atlas</li>
+                            </ul>
                         </td>
                     </tr>
 
@@ -64,13 +70,153 @@
                             </a>
                         </td>
                         <td>
-                            A featured-rich Android application for property rental management and searches. 
-                            This project featured advanced functionalities catering to different user roles and provided an intuitive interface for
-                            property listing and management.
+                            A feature-rich Android application for property rental management and searches. This project focused on delivering robust functionalities for different user types - Guests, Tenants, and Landlords.
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Kotlin</li>
+                                <li>Google Fairstore</li>
+                            </ul>
                         </td>
                     </tr>
+
+                    <tr>
+                        <td>
+                            <a href="https://github.com/Fionajiangfj/GroupProject_MovieFestival">
+                                Movie Festival (Group Project)
+                            </a>
+                        </td>
+                        <td>
+                            A dynamic and visually appealing website for a movie festival. The website consisted of three main pages: Home Page, Movie Details Page, and Purchase Ticket Page. Each page featured consistent header and footer sections for seamless navigation and user experience.
+                        </td>
+                        <td>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="https://github.com/Fionajiangfj/Assignment1_COUNTRIES">
+                                Favorite Countries
+                            </a>
+                        </td>
+                        <td>
+                            A Android application displaying information on world countries. The app featured a list of countries, a favorites screen, and integrated with an external API and Firestore for data management. Users could mark countries as favorites and manage their list.
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Kotlin</li>
+                                <li>Google Fairstore</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="https://github.com/Fionajiangfj/Assignment1_COUNTRIES">
+                                Weather Reports
+                            </a>
+                        </td>
+                        <td>
+                            An Android app for weather reporting. The app features a Current Weather Screen, displaying weather data at the user's location, and a History Screen, listing saved weather reports. Utilized Retrofit and Moshi for API data retrieval, saving reports to a Room database.
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Kotlin</li>
+                                <li>Room Database</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="https://github.com/Fionajiangfj/Assignment1_Hydro_Calculator">
+                                HYDRO calculator
+                            </a>
+                        </td>
+                        <td>
+                            An Android app for calculating electricity bills. Users input morning and evening electricity usage, with an option for renewable energy source rebate. The app calculates the total cost including environmental rebate and sales tax, and displays a detailed receipt.
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Kotlin</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="https://github.com/Fionajiangfj/Assignment1_Parking">
+                                Parking Lot
+                            </a>
+                        </td>
+                        <td>
+                            An Android app featuring a parking payment system. The app includes two screens: "Pay for Parking" for entering parking information and making payments, and "History of Receipts" displaying past transactions.
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Kotlin</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="https://github.com/Fionajiangfj/Library">
+                                Library
+                            </a>
+                        </td>
+                        <td>
+                            A full-stack web app for a library book borrowing system. The app features a home page displaying available books, a login page for user authentication, and a profile page showing borrowed books with a return option. It integrates two MongoDB collections for books and users, enabling users to borrow and return books.
+                        </td>
+                        <td>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>MongoDB Atlas</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="https://github.com/Fionajiangfj/Music">
+                                Music
+                            </a>
+                        </td>
+                        <td>
+                            A music web app. Users can add songs to and delete songs from their playlist.
+                        </td>
+                        <td>
+                            <ul>
+                                <li>JavaScript</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="https://github.com/Fionajiangfj/Assignment2_ELECTRICITY">
+                                Electricity Bill Calculator
+                            </a>
+                        </td>
+                        <td>
+                            An web app for calculating electricity bills. Users input on-peak and off-peak electricity usage, as well as province of residence. The app calculates the total cost including province rebate and sales tax, and displays a detailed receipt.
+                        </td>
+                        <td>
+                            <ul>
+                                <li>JavaScript</li>
+                            </ul>
+                        </td>
+                    </tr>
+
                 </tbody>
             </table>
         </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
